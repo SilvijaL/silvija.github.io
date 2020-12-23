@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar {
+    padding: 50px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.navbar-light .navbar-brand {
+    color: #262626;
+}
+
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    background: #262626;
+    color: #dcdde1;
+}
+
+#logo {
+    width: 180px;
+    height: 70px;
+}
+
+.main {
+    position: relative;
+    background: url(color:white);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 220px 0 200px;
+}
+
+.main h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6em;
+    color: #262626;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #262626;
+}
+/* team */
+.p1 {
+    font-size: 21px;
+    font-weight: lighter;
+    color: gray ;
+    padding-bottom: 50px;
+}
+
+small {
+    color: gray;
+    font-weight: bold;
+}
+
+.img-fluid {
+    -webkit-box-shadow: 0px 3px 17px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 17px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 17px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+#facebook {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(86, 86, 248);
+    color: white;
+    font-size: 20px;
+    padding-top: 7px;
+    display: inline-block;
+}
+
+#linkedin {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(30, 191, 231);
+    font-size: 20px;
+    padding-top: 7px;
+    color: white;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#pinterest {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(251, 49, 83);
+    font-size: 20px;
+    padding-top: 7px;
+    color: white;
+    display: inline-block;
+}
+
+#about {
+    font-size: 50px;
+    color: #2f2f2f;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 60px;
+}
+
+#container-overlay {
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 29%;
+    margin: 0 1.16%;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.content .overlay {
+    background: radial-gradient(#203520, #a2b6a3);
+    position: absolute;
+    width: 100%;
+    height: 99,3%;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.content:hover .overlay {
+    left: 0%;
+    opacity: 1;
+}
+
+.content-details {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 80%;
+    text-align: center;
+    /* padding: 0 16px; */
+    opacity: 0;
+    transform: translate(-50%, -50%) rotateZ(360deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+}
+
+.content-details h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 3px;
+    line-height: 25px;
+}
+
+.team {
+    margin-bottom: 100px;
+}
+
+#team1 {
+    margin-top: -60px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+    .image {
+        height: auto;
+    }
+    .content {
+        width: 30%;
+        margin: 3px;
+    }
+    .content-details h2 {
+        font-size: 12px;
+    }
+    .content-details p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 990px) {
+    .image {
+        height: 440px;
+    } 
+    #about {
+        padding-top: 100px;
+    }
+    .content {
+        width: 75%;
+        margin: 2.5% 12.5%;
+    }
+    .content-details h2 {
+        font-size: 25px;
+    }
+    .content-details p {
+        line-height: 22px;
+    }
+    #member1 {
+        padding-bottom: 50px;
+    }
+     #member2 {
+        padding-bottom: 50px;
+    }
+} 
+
+ @media(max-width: 768px) {
+     .image {
+         height: auto;
+     }
+     #about {
+         padding-top: 120px;
+     }
+     .content {
+        width: 75%;
+        margin: 2.5% 12.5%;
+    }
+     #member1 {
+        padding-bottom: 50px;
+    }
+     #member2 {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .image {
+        height: auto;
+    }
+    #about {
+        font-size: 35px;
+        padding-top: 120px;
+    }
+    .content {
+        width: 75%;
+        margin: 2.5% 12.5%;
+    }
+    #member1 {
+        padding-bottom: 50px;
+    }
+    #member2 {
+        padding-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

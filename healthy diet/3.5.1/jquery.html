@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        div {
+            background: burlywood;
+            text-align: center;
+            width: 60%;
+        }
+    </style>
+    <script>
+    $(document).ready(function() {
+        $(".tocno").click(function(){
+           $(".div1").css("background-color", "green");
+        });
+
+        $(".netocno").click(function(){
+            $(".div1").css("background-color", "red");
+        });
+
+        $(".tocno1").click(function(){
+           $(".div2").css("background-color", "green");
+        });
+
+        $(".netocno1").click(function(){
+            $(".div2").css("background-color", "red");
+        });
+
+        $(".tocno2").click(function(){
+           $(".div3").css("background-color", "green");
+        });
+
+        $(".netocno2").click(function(){
+            $(".div3").css("background-color", "red");
+        });
+    });
+
+
+
+    
+    </script>
+
+    <script>
+        function izberiDrzava(mojIzbor) {
+            if (mojIzbor == "Грција") {
+                alert("ОВА Е ТОЧЕН ОДГОВОР");
+            } else {
+                alert ("ОВА Е ГРЕШЕН ОДГОВОР");
+            }
+        }
+
+        function izberiGrad(mojIzbor) {
+            if (mojIzbor == "Скопје") {
+                alert ("ОВА Е ТОЧЕН ОДГОВОР")
+            } else {
+                alert ("ОВА Е ГРЕШЕН ОДГОВОР");
+            }
+        }
+
+        function izberiEzero(mojIzbor) {
+            if (mojIzbor == "Охридско езеро") {
+                alert ("ОВА Е ТОЧЕН ОДГОВОР")
+            } else {
+                alert ("ОВА Е ГРЕШЕН ОДГОВОР");
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div class="div1">
+        <h2>1.Која држава од наведените е јужен сосед на Република Македонија?</h2>
+        <input class="tocno" type="radio" name="odmor" value="Грција" onclick="izberiDrzava(this.value);">Грција
+        <input class="netocno" type="radio" name="odmor" value="Бугарија" onclick="izberiDrzava(this.value);">Бугарија
+        <input class="netocno" type="radio" name="odmor" value="Шпанија" onclick="izberiDrzava(this.value);">Шпанија
+    </div>
+
+    <div class="div2">
+        <h2>2. Кој е главен град во Република Македонија?</h2>
+        <input class="netocno1" type="radio" name="odmor" value="Прилеп" onclick="izberiGrad(this.value);">Прилеп
+        <input class="netocno1" type="radio" name="odmor" value="Битола" onclick="izberiGrad(this.value);">Битола
+        <input class="tocno1" type="radio" name="odmor" value="Скопје" onclick="izberiGrad(this.value);">Скопје
+        <input class="netocno1" type="radio" name="odmor" value="Ресен" onclick="izberiGrad(this.value);">Ресен
+    </div>
+
+    <div class="div3">
+        <h2>3. Кое од наведените природни езера е најголемо?</h2>
+        <input class="tocno2" type="radio" name="odmor" value="Охридско езеро" onclick="izberiEzero(this.value);">Охридско езеро
+        <input class="netocno2" type="radio" name="odmor" value="Преспанско езеро" onclick="izberiEzero(this.value);">Преспанско езеро
+        <input class="netocno2" type="radio" name="odmor" value="Дојранско езеро" onclick="izberiEzero(this.value);">Дојранско езеро
+    </div>
+</body>
+</html>

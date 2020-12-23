@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar {
+    padding: 50px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.navbar-light .navbar-brand {
+    color: #262626;
+}
+
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    background: #262626;
+    color: #dcdde1;
+}
+
+#logo {
+    width: 180px;
+    height: 70px;
+}
+
+.main {
+    position: relative;
+    background: url(color:white);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 220px 0 200px;
+}
+
+.head {
+    background-color: rgb(58, 165, 58);
+    border-radius: 5px;
+    margin-top: -40px;
+    -webkit-box-shadow: 9px 6px 13px -1px rgba(102,161,100,1);
+    -moz-box-shadow: 9px 6px 13px -1px rgba(102,161,100,1);
+    box-shadow: 9px 6px 13px -1px rgba(102,161,100,1);
+}
+
+.effect-1 {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect-1 ~ .Focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(58, 165, 58);
+    transition: 0.4s;
+}
+
+.effect-1:focus ~ .Focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.btn1 {
+    background-color:  rgb(58, 165, 58);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}
+
+.btn1:hover {
+    -webkit-box-shadow: 9px 6px 13px -1px rgba(102,161,100,1);
+    -moz-box-shadow: 9px 6px 13px -1px rgba(102,161,100,1);
+    box-shadow: 9px 6px 13px -1px rgba(102,161,100,1);
+}
+
+/* .main h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6em;
+    color: #262626;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+/* .main p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #262626;
+} */
+
+@media(max-width: 768px) {
+    .main{
+        padding: 200px 0;
+    }
+}
+
+@media(max-width: 998px) {
+    .main{
+        padding-top: 350px;
+    }
+    #padding {
+        padding-top: 15px;
+    }
+} 
+/* 
+#footer {
+    max-height: 150px;
+}*/
+
+/* .footer-copyright {
+    margin-top: 15px;
+}  */
+
+#page-footer {
+    height: 50px;
+}
+
+#logo {
+    width: 180px;
+    height: 70px;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

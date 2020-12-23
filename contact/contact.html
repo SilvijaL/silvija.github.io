@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css4/style4.css">
+    <title>Contact</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container">
+                   <a href="../index.html" class="navbar-brand">
+                    <img src="img4/LogoMakr-7bYs1R.png" class="img-responsive" alt="Responsive image" id="logo">
+                   </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../about/about.html" class="nav-link">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../calculator/BMI.html" class="nav-link">BMI Calculator</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../healthy diet/diet.html" class="nav-link">Healthy Diet</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="../contact/contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+<form method="POST" action="contact.php" novalidate id="contact_form">
+    <section class="main contact">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="head text-center text-white py-3">
+                                        <h3>Contact Us</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form p-3">
+                                <div class="form-row my-5">
+
+                                    <div class="col-lg-6">
+                                        <input name="name" type="text" class="effect-1" placeholder="First Name" required>
+                                        <span class="Focus-border"></span>
+                                        <div class="invalid-feedback">
+                                            Name field is required.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6" id="padding">
+                                        <input name="surname" type="text" class="effect-1" placeholder="Last Name" required>
+                                        <span class="Focus-border"></span>
+                                        <div class="invalid-feedback">
+                                            Last name field is required.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <div class="form-row pb-4">
+
+                                        <div class="col-lg-12 pt-2">
+                                            <input name="email" type="text" class="effect-1" placeholder="Email Address"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                            <span class="Focus-border"></span>
+                                            <div class="invalid-feedback">
+                                                Email field is required and should be an valid email.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row pt-4">
+                                        <div class="col-lg-12">
+                                            <input name="message" type="text" class="effect-1" placeholder="Your Message" required>
+                                            <span class="Focus-border"></span>
+                                            <div class="invalid-feedback">
+                                                Message field is required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row pt-4">
+                                        <div class="col-lg-6">
+                                            <p> <input type="checkbox"> I'm not a robot </p>
+                                        </div>
+                                        <div class="offset-2 col-lg-4">
+                                           <button class="btn1 align-items-center">Send Message</button>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+
+    
+
+
+<!-- Footer -->
+
+<footer class="page-footer bg-dark">
+
+    <div class="bg-success">
+       <div class="container" id="page-footer">
+           <div class="row py-3 d-flex align-items-center">
+   
+               <div class="col-md-12 text-center">
+                   <a href="https://www.facebook.com/silvisilviloz/" target="_blank"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                   <a href="https://www.linkedin.com/in/silvija-lozanova-7443041ba/" target="_blank"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                   <a href="https://www.instagram.com/__siilviii__/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="container text-center text-md-left mt-4" id="footer">
+       <div class="row">
+           <div class="col-md-3 mx-auto mb-4">
+               <h6 class="text-uppercase font-weight-bold text-secondary">SL NUTRITION</h6>
+               <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+               <p class="text-secondary">Health is a daily practise <br> not a 30 day diet.</p>
+           </div>
+           <div class="col-md-2 mx-auto mb-4">
+               <h6 class="text-uppercase font-weight-bold text-secondary">Usefull links</h6>
+               <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
+   
+               <ul class="list-unstyled" id="links">
+                   <li class="my-1"><a href="../about/about.html" class="text-secondary">About</a></li>
+                   <li class="my-1"><a href="../calculator/BMI.html" class="text-secondary">BMI Calculator</a></li>
+                   <li class="my-1"><a href="../healthy diet/diet.html" class="text-secondary">Healthy Diet</a></li>
+                   <li class="my-1"><a href="../contact/contact.html" class="text-secondary">Contact Us</a></li>
+               </ul>
+           </div>
+           <div class="col-md-3 mx-auto mb-4">
+               <h6 class="text-uppercase font-weight-bold text-secondary">Contact</h6>
+               <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height: 2px;">
+   
+               <ul class="list-unstyled">
+                   <li class="my-1"><i class="fas fa-home mr-3 text-secondary"></i><a class="text-secondary">Bitola, North Macedonia</a></li>
+                   <li class="my-1"><i class="far fa-envelope mr-3 text-secondary"></i><a class="text-secondary">lozanovas@yahoo.com</a></li>
+                   <li class="my-1"><i class="fas fa-phone mr-3 text-secondary"></i><a class="text-secondary">+389 76 717 ***</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+           <div class="footer-copyright text-center py-1 text-secondary">
+               <p> Copyright &copy; 2020, SL Nutrition</p>
+           </div>
+   </footer>
+
+   <script>
+    // Some random colors
+    const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+    
+    const numBalls = 50;
+    const balls = [];
+    
+    for (let i = 0; i < numBalls; i++) {
+      let ball = document.createElement("div");
+      ball.classList.add("ball");
+      ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+      ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+      ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+      ball.style.transform = `scale(${Math.random()})`;
+      ball.style.width = `${Math.random()}em`;
+      ball.style.height = ball.style.width;
+      
+      balls.push(ball);
+      document.body.append(ball);
+    }
+    
+    // Keyframes
+    balls.forEach((el, i, ra) => {
+      let to = {
+        x: Math.random() * (i % 2 === 0 ? -11 : 11),
+        y: Math.random() * 12
+      };
+    
+      let anim = el.animate(
+        [
+          { transform: "translate(0, 0)" },
+          { transform: `translate(${to.x}rem, ${to.y}rem)` }
+        ],
+        {
+          duration: (Math.random() + 1) * 2000, // random duration
+          direction: "alternate",
+          fill: "both",
+          iterations: Infinity,
+          easing: "ease-in-out"
+        }
+      );
+    });
+
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var form = document.getElementById('contact_form');
+        console.log('hereree', form)
+        // Loop over them and prevent submission
+        // var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+        }, false);
+        // });
+        }, false);
+    })();
+
+    </script>
+
+
+    
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="css2/style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container">
+                   <a href="../index.html" class="navbar-brand">
+                    <img src="img2/LogoMakr-7bYs1R.png" class="img-responsive" alt="Responsive image" id="logo">
+                </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../about/about.html" class="nav-link">About</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="../calculator/BMI.html" class="nav-link">BMI Calculator</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../healthy diet/diet.html" class="nav-link">Healthy Diet</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../contact/contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+  <section class="main container">
+ <div class="wrapper">
+     <div class="container bmi">
+         <div class="row">
+             <div class="col-md-6 col-lg-4 mb-3">
+                 <div class="card mx-30">
+                     <img src="img2/5de920c7816040017a9e9036_IMG_8184.jpg" class="card-img-top" alt="">
+                     <div class="card-body bmi">
+                         <h5 class="card-title">What is BMI?</h5>
+                         <p class="card-text">
+                            Body Mass Index (BMI) is a measurement of a person’s weight with respect to his or hers height. It is more of an indicator than a direct measurement of a person’s total body fat.
+                            BMI, more often than not, correlates with total body fat. This means that as the BMI score increases, so does a person’s total body fat.
+                         </p>
+                     </div>
+                    </div>
+             </div>
+
+             <div class="col-md-6 col-lg-4 mb-3">
+                <div class="card mx-30">
+                    <img src="img2/cal.png" class="card-img-top" alt="calculator">
+                    <div class="card-body bmi">
+                        <h5 class="card-title">BMI calculation</h5>
+                        <p class="card-text">
+                            The formula is - BMI = (Weight in kilograms) divided by (Height in metres squared)
+                            A normal BMI score is one that falls between 18.5 and 24.9. This indicates that a person is within the normal weight range for his or her height. A BMI chart is used to categorize a person as underweight, normal, overweight, or obese.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="card mx-30">
+                    <img src="img2/The-Importance-Of-Maintaining-A-Healthy-BMI-copy1.jpg" class="card-img-top" alt="">
+                    <div class="card-body bmi">
+                        <h5 class="card-title">Why is BMI Important?</h5>
+                        <p class="card-text">
+                            BMI is important as it is widely regarded that your chances of having a longer and healthier life are improved if you have a healthy BMI.
+                            If your BMI is high, you may also have an increased risk of developing type 2 diabetes, as well as other metabolic diseases such as hypertension, high cholesterol and heart disease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+ </div>
+
+    <div class="card mt-5">
+        <div class="card-header text-center">BMI Calculator</div>
+        <div class="card-body">
+            <form class="w-50 m-auto">
+                <div class="form-group text-left">
+                    <label>Weight:</label>
+                    <input type="text" name="Weight in Kg" placeholder="Weight in Kg" id="w" class="form-control">
+                </div>
+                <div class="form-group text-left">
+                    <label>Height:</label>
+                    <input type="text" name="Height in Cm" placeholder="Height in Cm" id="h" class="form-control">
+                </div>
+                    <p id="result"></p>
+                <div>
+                    <button type="button" class="btn btn-success" onClick="BMI();">Check BMI</button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center">A healthy BMI ranges between 19 and 25</div>
+    </div>
+
+</section>
+
+<!-- Resposive Galery  -->
+
+<section class="gallery-block cards-gallery">
+    <div class="container">
+        <div class="heading mt-1">
+            <h2>Gallery</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover" id="card1">
+                    <a class="lightbox" href="img2/slika1.png"><img src="img2/slika1.png" class="card-img-top"> </a>
+                    <div class="card-body gallery-body">
+                        <h6>BMI depends on more factors</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover" id="card2">
+                    <a class="lightbox" href="img2/slika7.jpg"><img src="img2/slika7.jpg" class="card-img-top"> </a>
+                    <div class="card-body gallery-body">
+                        <h6>Childhood overweight</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover" id="card3">
+                    <a class="lightbox" href="img2/slika8.jpg"><img src="img2/slika8.jpg" class="card-img-top"> </a>
+                    <div class="card-body gallery-body">
+                        <h6>Healthy food is the key</h6>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover" id="card4">
+                    <a class="lightbox" href="img2/slika4.jpg"><img src="img2/slika4.jpg" class="card-img-top"> </a>
+                    <div class="card-body gallery-body">
+                        <h6>Adult BMI range</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover" id="card5">
+                    <a class="lightbox" href="img2/slika5.jpg"><img src="img2/slika5.jpg" class="card-img-top"> </a>
+                    <div class="card-body gallery-body">
+                        <h6>Anorexia - eating disorder</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover" id="card6">
+                    <a class="lightbox" href="img2/slika6.jpeg"><img src="img2/slika6.jpeg" class="card-img-top"> </a>
+                    <div class="card-body gallery-body">
+                        <h6>Obesity</h6>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="page-footer bg-dark">
+
+    <div class="bg-success">
+       <div class="container" id="page-footer">
+           <div class="row py-3 d-flex align-items-center">
+   
+               <div class="col-md-12 text-center">
+                   <a href="https://www.facebook.com/silvisilviloz/" target="_blank"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                   <a href="https://www.linkedin.com/in/silvija-lozanova-7443041ba/" target="_blank"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                   <a href="https://www.instagram.com/__siilviii__/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="container text-center text-md-left mt-4" id="footer">
+       <div class="row">
+           <div class="col-md-3 mx-auto mb-4">
+               <h6 class="text-uppercase font-weight-bold text-secondary">SL NUTRITION</h6>
+               <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+               <p class="text-secondary">Health is a daily practise <br> not a 30 day diet.</p>
+           </div>
+           <div class="col-md-2 mx-auto mb-4 text-secondary">
+               <h6 class="text-uppercase font-weight-bold">Usefull links</h6>
+               <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
+   
+               <ul class="list-unstyled" id="links">
+                   <li class="my-1"><a href="../about/about.html" class="text-secondary">About</a></li>
+                   <li class="my-1"><a href="../calculator/BMI.html" class="text-secondary">BMI Calculator</a></li>
+                   <li class="my-1"><a href="../healthy diet/diet.html" class="text-secondary">Healthy Diet</a></li>
+                   <li class="my-1"><a href="../contact/contact.html" class="text-secondary">Contact Us</a></li>
+               </ul>
+           </div>
+           <div class="col-md-3 mx-auto mb-4">
+               <h6 class="text-uppercase font-weight-bold text-secondary">Contact</h6>
+               <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height: 2px;">
+   
+               <ul class="list-unstyled">
+                   <li class="my-1"><i class="fas fa-home mr-3 text-secondary"></i><a class="text-secondary">Bitola, North Macedonia</a></li>
+                   <li class="my-1"><i class="far fa-envelope mr-3 text-secondary"></i><a class="text-secondary">lozanovas@yahoo.com</a></li>
+                   <li class="my-1"><i class="fas fa-phone mr-3 text-secondary"></i><a class="text-secondary">+389 76 717 ***</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+           <div class="footer-copyright text-center py-1 text-secondary">
+               <p> Copyright &copy; 2020, SL Nutrition</p>
+           </div>
+   </footer>
+    
+   <script type="text/javascript">
+
+   // On Refresh to the top Page
+
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        }
+
+
+    function BMI() {
+        var result_field = document.getElementById("result");
+        var h=document.getElementById("h").value;
+        var w=document.getElementById("w").value;
+
+        // check if height and width values are empty
+        if (!h || !w) {
+            result_field.innerHTML="Please insert values for width and height";
+            result_field.style.color = 'red'
+            return
+        }
+
+        var bmi=w/(h/100*h/100);
+        var bmio=(bmi.toFixed(2));
+
+        result_field.innerHTML="Your BMI is " + bmio;
+        result_field.style.color = 'green'
+    }
+
+    $(document).ready(function(){
+    
+        $('.col-md-6').hover(
+            //trigger when mouse hover
+            function(){
+                $(this).animate({
+                    marginTop:"-=1%",
+                },200);
+            },
+
+        // trigger when mouse out
+            function(){
+                $(this).animate({
+                    marginTop: "0%"
+                },200);
+            }
+        );
+    });
+    </script>
+
+  
+
+
+    
+
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+   <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn' })
+   </script>
+</body>
+</html>
